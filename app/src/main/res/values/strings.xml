@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GMVVM</string>
+    <string name="str_count">共【%s】人</string>
 </resources>

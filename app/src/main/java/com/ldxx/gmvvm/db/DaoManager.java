@@ -8,7 +8,8 @@ public class DaoManager {
     private DaoSession mDaoSession;
 
     private DaoManager() {
-        DaoMaster.DevOpenHelper devOpenHelper = new DaoMaster.DevOpenHelper(GMVVMApplication.getContext(), "user.db", null);
+        DaoMaster.DevOpenHelper devOpenHelper = new DaoMaster.DevOpenHelper(GMVVMApplication
+                .getContext(), "user.db", null);
         DaoMaster mDaoMaster = new DaoMaster(devOpenHelper.getWritableDatabase());
         mDaoSession = mDaoMaster.newSession();
     }
